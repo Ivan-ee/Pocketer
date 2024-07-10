@@ -8,7 +8,7 @@ run: build
 	./.bin/bot
 
 build-image:
-	docker build -t pocketer:v0.1 .
+	sudo docker build -t pocketer:v0.1 .
 
 start-container:
-	docker run --name pocketer -p 80:80  --env-file .env pocketer:v0.1
+	sudo docker run --name pocketer -p 80:80  --env-file .env pocketer:v0.1
